@@ -1,0 +1,21 @@
+CREATE TABLE `saleitem` (
+  `INVREF` char(10) NOT NULL,
+  `ITEMNUM` char(14) DEFAULT NULL,
+  `ITEMDESC` char(50) DEFAULT NULL,
+  `SPRICE` decimal(14,2) DEFAULT NULL,
+  `QTY` decimal(10,3) DEFAULT NULL,
+  `AMOUNT` decimal(14,2) DEFAULT NULL,
+  `OUTLET` char(4) DEFAULT NULL,
+  `STORENUM` char(2) DEFAULT NULL,
+  `TIMESTAMP` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DUMMY2` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `VAT` decimal(14,2) NOT NULL DEFAULT '0.00',
+  `COSTAMOUNT` decimal(12,2) NOT NULL DEFAULT '0.00',
+  `amountfcur` decimal(14,2) DEFAULT NULL,
+  `ccy` char(3) DEFAULT NULL,
+  `xcrate` decimal(12,4) DEFAULT NULL,
+  `commission` decimal(12,2) DEFAULT NULL,
+  `costp` decimal(14,2) DEFAULT NULL,
+  PRIMARY KEY (`DUMMY2`),
+  KEY `invref` (`INVREF`,`ITEMNUM`)
+) ENGINE=MyISAM AUTO_INCREMENT=109770 DEFAULT CHARSET=latin1	
