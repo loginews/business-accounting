@@ -1,0 +1,5 @@
+In supermarket.php there are accesskey instructions.
+This allows the browser to launch buttons automatically
+I have created an invisible button and attached an event to it, which copies the total due to clipboard
+Alt_Ctrl_d is the accesskey
+Autokey fires the Alt_Ctrl_d, which then fires the copy to clipboard.
