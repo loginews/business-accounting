@@ -1,0 +1,2 @@
+Use the Critical statement after OnClipboardChange: label in order to force the timer to wait for the event.
+Maybe we must use Critical,Off to turn it off in order to catch button events.
